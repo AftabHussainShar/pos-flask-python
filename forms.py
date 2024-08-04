@@ -31,6 +31,8 @@ def validate_pos (form, field):
       raise ValidationError('Please select a POS')
 
 
+
+# validation vendor form 
 class VendorForm (FlaskForm):
    vendorid=StringField('Vendor ID',  id='vendorid', validators=[DataRequired()])
    vendorname = StringField('Vendor Name', id='vendorname', validators=[DataRequired()])
