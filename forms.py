@@ -37,6 +37,8 @@ class VendorForm (FlaskForm):
    vendorid=StringField('Vendor ID',  id='vendorid', validators=[DataRequired()])
    vendorname = StringField('Vendor Name', id='vendorname', validators=[DataRequired()])
 
+
+#category form 
 class CategoryForm(FlaskForm):
    categoryid = StringField('Category ID', id='categoryid', validators=[DataRequired()])
    categoryname = StringField('Category Name', id='categoryname', validators=[DataRequired()])
