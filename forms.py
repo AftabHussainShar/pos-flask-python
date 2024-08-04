@@ -17,6 +17,9 @@ class WarehouseForm (FlaskForm):
    warehouseid=StringField('Warehouse ID',  id='warehouseid', validators=[DataRequired()])
    warehousename=StringField('Warehouse Name',  id='warehousename', validators=[DataRequired()])
 
+
+
+# validation function 
 def validate_store (form, field):
    if field.data==0:
       raise ValidationError('Please select a Store')
