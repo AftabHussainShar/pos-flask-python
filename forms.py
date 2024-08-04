@@ -24,6 +24,8 @@ def validate_store (form, field):
    if field.data==0:
       raise ValidationError('Please select a Store')
 
+
+# validation pos
 def validate_pos (form, field):
    if field.data==0:
       raise ValidationError('Please select a POS')
