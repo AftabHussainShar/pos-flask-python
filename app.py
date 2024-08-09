@@ -18,6 +18,7 @@ from warehouse.warehouse import warehouse_bp
 
 # create function
 def create_app():
+    
     app = Flask(__name__)
     app.config['MYSQL_HOST'] = "localhost"
     app.config['MYSQL_USER'] = "root"
