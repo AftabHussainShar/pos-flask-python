@@ -25,7 +25,6 @@ def create_app():
     app.config['MYSQL_PASSWORD'] = ""
     app.config['MYSQL_DB'] = "pos"
     app.config['SECRET_KEY'] = '\xfd{H\xe5<\x95\xf9\xe3\x96.5\xd1\x01O<!\xd5\xa2\xa0\x9fR"\xa1\xa8'
-    # app.config['EXPLAIN_TEMPLATE_LOADING'] = True
     register_extensions(app)
     app.register_blueprint(auth_bp)
     app.register_blueprint(brand_bp)
