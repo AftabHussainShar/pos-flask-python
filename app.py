@@ -16,7 +16,7 @@ from store.store import store_bp
 from vendor.vendor import vendor_bp
 from warehouse.warehouse import warehouse_bp
 
-
+# create function
 def create_app():
     app = Flask(__name__)
     app.config['MYSQL_HOST'] = "localhost"
