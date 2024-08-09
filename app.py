@@ -42,7 +42,7 @@ def create_app():
     app.register_blueprint(warehouse_bp)
     return app
 
-
+# regidter function
 def register_extensions(app):
     mysql.init_app(app)
 
